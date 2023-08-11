@@ -1,6 +1,8 @@
 name: Build draft
 on:
-  push: {}
+  push: 
+    branches:
+      - main
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -10,16 +12,16 @@ jobs:
 
       - name: Combine
         run: |
-            cat *.md > spec.md
+            make
 
       - name: ISO
         uses: MatthiasValvekens/pandoc-iso@master
         with:
-          md-in: spec.md
+          md-in: docs/index.md
           docx-out: spec.docx
 
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
           name: docx-draft
-          path: spec.docx
+          path: docs/index.docx
