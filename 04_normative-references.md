@@ -10,4 +10,3 @@ ISO 32000-2, *Document management --- Portable Document Format --- Part 2: PDF 2
 ::: { #nrm:cms .normref label="RFC 5652" }
 HOUSLEY, R. *RFC 5652: Cryptographic Message Syntax (CMS).* [online]. 2009. Available from: <https://tools.ietf.org/html/rfc5652.html>
 :::
-
