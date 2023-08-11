@@ -1,3 +1,20 @@
 theme: jekyll-theme-minimal
 title: TSWG Test Spec
 description: A test implementation of formatting and publishing an ISO specification using the "Simple" template.
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - 00_title.md
+  - 01_foreword.md
+  - 02_introduction.md
+  - 03_scope.md
+  - 04_normative_references.md
+  - 05_terms_and_defs.md
+  - 06_clauses.md
+  - 07_annex.md
+  - 08_biblio.md  
+  - README.md
+  - LICENSE
