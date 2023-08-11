@@ -18,7 +18,7 @@ jobs:
         uses: MatthiasValvekens/pandoc-iso@master
         with:
           md-in: docs/index.md
-          docx-out: spec.docx
+          docx-out: docs/index.docx
 
       - name: Upload
         uses: actions/upload-artifact@v3
