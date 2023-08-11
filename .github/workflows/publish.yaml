@@ -23,5 +23,5 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
-          name: docx-draft
+          name: ${{ github.event.repository.name }}-iso-draft
           path: docs/index.docx
