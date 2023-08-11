@@ -1,0 +1,25 @@
+name: Build draft
+on:
+  push: {}
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Combine
+        run: |
+            cat *.md > spec.md
+
+      - name: ISO
+        uses: MatthiasValvekens/pandoc-iso@master
+        with:
+          md-in: spec.md
+          docx-out: spec.docx
+
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: docx-draft
+          path: spec.docx
