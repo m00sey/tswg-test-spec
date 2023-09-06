@@ -1,6 +1,6 @@
-# tswg-test-spec
+# iso-template
 
-A test implementation of formatting and publishing an ISO specification using the "Simple" template.
+A template for formatting and publishing an ISO specification using the "ISO Simple" template.
 
 
 ### Local editing
